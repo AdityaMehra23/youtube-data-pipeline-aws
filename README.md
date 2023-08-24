@@ -19,13 +19,14 @@ The ETL data pipeline used S3 buckets as the primary data source and storage rep
 3. Set up AWS Athena to read data from AWS Data Catalog.
 4. Create Lambda function to convert JSON to Parquet. It will be triggered by S3 triggers.
 ![](/img/json-parquet-lambda-s3-trigger.png)
-5. Write spark-based job in AWS Glue Jupyter notebook. It requires appropriate IAM role and policies.
+<img src="https://github.com/AdityaMehra23/youtube-data-pipeline-aws/tree/main/img/json-parquet-lambda-s3-trigger.png">
+6. Write spark-based job in AWS Glue Jupyter notebook. It requires appropriate IAM role and policies.
 ![](/img/json-parquet-glue.png)
-6. Converting datatypes of columns in Glue tables can be done by changing schema in AWS Data Catalog and then reloading the tables from S3. It can be implemented using Lambda and Glue Jobs.
+7. Converting datatypes of columns in Glue tables can be done by changing schema in AWS Data Catalog and then reloading the tables from S3. It can be implemented using Lambda and Glue Jobs.
 ![](/img/json-parquet-lambda-s3-trigger-schema-update.png)
 ![](/img/json-parquet-glue-schema-update.png)
-7. Create Glue job to convert statistics data from CSV to Parquet. 
-8. Create a reporting layer by joining processed reference_data and processed statistics data using Glue. The spark script can be modified for specific purposes such as adding push_down_predicate option to read specific partitions.
+8. Create Glue job to convert statistics data from CSV to Parquet. 
+9. Create a reporting layer by joining processed reference_data and processed statistics data using Glue. The spark script can be modified for specific purposes such as adding push_down_predicate option to read specific partitions.
 ![](/img/reporting-layer-glue.png)
 8. Now query table in the reporting layer using Athena.
 ![](/img/reporting-layer-athena.png)

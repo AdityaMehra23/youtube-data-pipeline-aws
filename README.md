@@ -34,14 +34,19 @@ Now below graphs can be visualized.
 
 The number of likes per video, filtered by videos having likes greater than 1 M.
     <img src="/img/data-vis-1.png" width="70%" >
+
 We can compare that with the channels that received maximum views.
     <img src="/img/data-vis-2.png" width="70%" >
+
 An interesting trend is observed when views for Education and Gaming videos are plotted over time.
     <img src="/img/data-vis-3.png" width="70%" >
+
 A better picture of total views can be observed using pie chart
     <img src="/img/data-vis-4.png" width="70%" >
+
 We can also filter and create the same chart with other categories to visualize the views.
     <img src="/img/data-vis-5.png" width="70%" >
+    
 By incorporating more specific data, such as the time of day, we can pinpoint when different users are most active. Geo Maps can be made to identify regions where certain videos are particularly popular. Furthermore, we can determine the Top-N most liked or disliked videos within a given category.
 
 

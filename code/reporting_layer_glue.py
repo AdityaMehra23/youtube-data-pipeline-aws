@@ -1,4 +1,4 @@
-# script to join reference_data and statistics table and create a reporting layer 
+# Modified script to join reference_data and statistics table and create a reporting layer 
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
